@@ -13,30 +13,27 @@ var specialCharacters = ["!", "#", "$", "%", "&", "@"]
 
 // Assignment code here
 function generatePassword() {
-  var passwordLength = prompt("How long do you want your password to be?");
-  var specialConfirmed = prompt("Do you want to use special characters?");
-  var numbersConfirmed = prompt("Do you want to use numbers?")
-  var upperConfirmed = prompt ("Do you want to use uppercase letters?")
+var passwordLength = prompt("How long do you want your password to be?");
+var specialConfirmed = confirm("Do you want to use special characters?");
+var uppercaseConfirmed = confirm("Do you want to use uppercase letters?");
+var lowercaseConfirmed = confirm("Do you want to use lowercase leters?");
+var numbersConfirmed = confirm("Do you want to use numbers?");
 
-  var characters = [];
-  if (specialConfirmed) {
-    characters = characters.concat(specialCharacters, lowercaseLetters);
+var characters = [];
+if (specialConfirmed) {
+  characters = characters.concat(specialCharacters);
 }
-  console.log(characters);
+if (uppercaseConfirmed) {
+  characters = characters.concat(uppercaseLetters);
+}
+if (lowercaseConfirmed) {
+  characters = characters.concat(lowercaseLetters);
+}
+if (numbersConfirmed) {
+    characters = characters.concat(numeric);
+}
 
-  var numbers = [];
-  if (numbersConfirmed) {
-    numbers = numbers.concat(specialCharacters, lowercaseLetters, numeric);
-  }
-  console.log(numbers);
-
-
-  var uppercase = [];
-  if (upperConfirmed) {
-    uppercase = uppercase.concat(specialCharacters, lowercaseLetters, numeric);
-    uppercase = uppercase.concat(uppercaseLetters);
-  }
-  console.log(uppercase);
+console.log(characters);
 
   // this is to generate password length with lowercaseLetters
   var builtPassword = "";
@@ -45,7 +42,6 @@ function generatePassword() {
   }
   return builtPassword;
 }
-
 
 // Write password to the #password input
 function writePassword() {
