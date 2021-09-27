@@ -10,8 +10,6 @@ var numeric = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
 
 var specialCharacters = ["!", "#", "$", "%", "&", "@"]
 
-var characterLength = "";
-
 // Assignment code here
 function generatePassword() {
   var passwordLength = prompt("How long do you want your password to be?");
@@ -24,7 +22,7 @@ function generatePassword() {
   var lowercaseConfirmed = confirm("Do you want to use lowercase leters? Please press 'OK' for yes, and 'Cancel' for No");
   var numbersConfirmed = confirm("Do you want to use numbers? Please press 'OK' for yes, and 'Cancel' for No");
  }
-while (specialConfirmed === false && uppercaseConfirmed === false && lowercaseConfirmed === false && numbersConfirmed === false);
+while (!specialConfirmed && !uppercaseConfirmed && !lowercaseConfirmed && !numbersConfirmed);
 
 
   var characters = [];
