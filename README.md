@@ -34,5 +34,6 @@ To give thanks to all who have helped create this product.
 © 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
 
 ## Badges
-![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
+
+• <a href="https://github.com/badges/shields" img src="https://img.shields.io/badge/Javascript-100%25-blue" alt="javascript 100% badge"></a>
 
