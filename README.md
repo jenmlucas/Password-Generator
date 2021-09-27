@@ -12,9 +12,9 @@ Javascript
 ## Usage
 This is how it will look on your device
 
-![Password Generator Screenshot](blob\Develop\assets\images\passwordgeneratorempty.png)
+![Password Generator Screenshot](develop\assets\images\passwordgeneratorempty.png)
 
-![Password Generator ScreenShot with example](blob\Develop\assets\images\passwordgeneratorwithpassword.png)
+![Password Generator ScreenShot with example](develop\assets\images\passwordgeneratorwithpassword.png)
   
 ## Credits
 To give thanks to all who have helped create this product.
