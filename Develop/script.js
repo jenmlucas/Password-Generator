@@ -1,7 +1,7 @@
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
-// storage
+// storage- Arrays
 var lowercaseLetters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
 
 var uppercaseLetters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
@@ -18,11 +18,15 @@ function generatePassword() {
  while (passwordLength < 8 || passwordLength > 128) {
     passwordLength = prompt("Password needs to be 8 or more characters in length and less than 128");
   }
-  
+ do {
   var specialConfirmed = confirm("Do you want to use special characters?");
   var uppercaseConfirmed = confirm("Do you want to use uppercase letters?");
   var lowercaseConfirmed = confirm("Do you want to use lowercase leters?");
   var numbersConfirmed = confirm("Do you want to use numbers?");
+ }
+while (specialConfirmed === false && uppercaseConfirmed === false && lowercaseConfirmed === false && numbersConfirmed === false);
+
+
 
   var characters = [];
   if (specialConfirmed) {
