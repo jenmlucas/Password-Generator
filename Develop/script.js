@@ -19,13 +19,12 @@ function generatePassword() {
     passwordLength = prompt("Password needs to be 8 or more characters in length and less than 128");
   }
  do {
-  var specialConfirmed = confirm("Do you want to use special characters?");
-  var uppercaseConfirmed = confirm("Do you want to use uppercase letters?");
-  var lowercaseConfirmed = confirm("Do you want to use lowercase leters?");
-  var numbersConfirmed = confirm("Do you want to use numbers?");
+  var specialConfirmed = confirm("Do you want to use special characters? Please press 'OK' for yes, and 'Cancel' for No");
+  var uppercaseConfirmed = confirm("Do you want to use uppercase letters? Please press 'OK' for yes, and 'Cancel' for No");
+  var lowercaseConfirmed = confirm("Do you want to use lowercase leters? Please press 'OK' for yes, and 'Cancel' for No");
+  var numbersConfirmed = confirm("Do you want to use numbers? Please press 'OK' for yes, and 'Cancel' for No");
  }
 while (specialConfirmed === false && uppercaseConfirmed === false && lowercaseConfirmed === false && numbersConfirmed === false);
-
 
 
   var characters = [];
