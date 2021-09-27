@@ -35,5 +35,4 @@ To give thanks to all who have helped create this product.
 
 ## Badges
 
-• <a href="https://github.com/badges/shields" img src="https://img.shields.io/badge/Javascript-100%25-blue" alt="javascript 100% badge"></a>
-
+![badmath](https://img.shields.io/badge/Javascript-100%25-blue)
